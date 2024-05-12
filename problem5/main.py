@@ -1,11 +1,5 @@
 def remove_duplicates(array):
-    seen = set()
-    remove_duplicates = []
-    for data in array:
-        if data not in seen :
-            remove_duplicates.append(data)
-            seen.add(data)
-    return remove_duplicates
+    return len(set(array))
 
 if __name__ == '__main__':
     print(remove_duplicates([2, 3, 3, 3, 6, 9, 9])) # 4
